@@ -2,12 +2,16 @@
 LinkedList++ is a C++ Linked List template class library.
 This is a simple plug and play library. There is no need to compile it using cmake or anything. Just include it in your code with correct path and create a class object and use it to store data in a linked list.
 
-It has member function:
-1. Add new nodes 
-2. Return any node
-3. Print Any node.
-4. Delete any node.
+It has member functions:
 
-One can simply access the nodes by providing the location of the element to a function which returns the variable stored in it.
-In the library the counting starts from 1 and not from 0, thus making it less confusing.
+1. `node* createnode(T data) ----- creates a new node and returns its location as pointer to its location, pass data to be stored into it as argument
 
+2. LinkedList () ---------------- class constructor
+
+3. void add(T data) ------------- function to add nodes to the linked list
+
+4. T& operator[](int location) -- operator overloaded function to pass node data as a reference, can be used to reassign and extract values
+
+5. void del(int location) ------- function to delete node of linked list 
+
+6. int size() ------------------- function to return size of linked list
