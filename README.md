@@ -3,8 +3,8 @@ LinkedList++ is a C++ Linked List template class library.
 This is a simple plug and play library. There is no need to compile it using cmake or anything. Just include it in your code with correct path and create a class object and use it to store data in a linked list.
 
 It has member functions:
-
-1. `node* createnode(T data) ----- creates a new node and returns its location as pointer to its location, pass data to be stored into it as argument
+```
+1. node* createnode(T data) ----- creates a new node and returns its location as pointer to its location, pass data to be stored into it as argument
 
 2. LinkedList () ---------------- class constructor
 
@@ -15,3 +15,4 @@ It has member functions:
 5. void del(int location) ------- function to delete node of linked list 
 
 6. int size() ------------------- function to return size of linked list
+```
